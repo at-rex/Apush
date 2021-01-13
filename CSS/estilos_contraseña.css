@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+font-family: 'Open Sans', sans-serif;
+}
+
+.conteiner{
+	display: grid;
+	height: 100vh;
+	grid-template-rows: 1fr 5fr;
+	
+}
+/*seccion 01 */
+.seccion1{
+	height: 15vh;
+	background: #1c2b2d;
+	display: flex;
+	align-items: center;
+
+ 	padding-left: 190px; 
+
+}
+
+.div-img{
+	
+	height: 70px;
+	width: 380px;	
+}
+.div-img img{
+	height: 100%; width: 100%;
+}
+
+/*-----------------seccion 02*/
+h1{
+font-size: 15px;
+	font-weight: bold;
+}
+p{
+	font-weight: bold;
+	font-size: 16px;
+}
+.seccion-2{
+	background: #eeeeee;
+	height: 85vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(5,1fr);
+
+	justify-content: center;
+
+	/*min-width:950px;
+	min-height: 600px;*/
+}
+
+.div-restablecer{
+	
+background: white;
+box-shadow: 0 2.5px 6px rgba(45, 45,45,0.2);
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+	grid-row-start:2 ;
+	grid-row-end: 4;	
+
+	border:1px solid #839b97;
+	border-radius: 5px;
+
+	padding: 10px;
+}
+h1{
+	height: 20%;
+	
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	border-bottom: 1px solid #444;
+
+}
+
+.input{
+	height: 80%;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 5%;
+	
+}
+/*------------------*/
+
+/*btn*/
+.btn{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.btn-enviar{
+  background-color: #a20a0a;
+  color: white;
+  padding: 5px 10px ;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 25%;
+ }
+
+ /*input */
+input[type="email"]{
+
+ 	width: 90%;
+	height: 15%;
+	outline: none;
+	font-size: 16px;
+	font-weight: bold;
+	border: 0;
+	border-bottom: 2px solid #8d93ab;
+	padding: 15px 10px;
+
+}
+
+input[type="submit"]:hover{
+	background: #0f3057;
+	border:  0px;
+	color: #fff;
+	transition:background .5s, color .5s;
+}
+/*------------------------------------*/
+
+/*@media screen and (max-width: 1500px) {
+
+	.conteiner{
+		min-height: 600px;
+		min-width: 850px;
+	}
+
+	.div-restablecer{
+		min-width: 350px;
+			min-height: 250px;
+	}
+}*/
+
+/*@media screen and (max-width: 778px) {
+
+	.conteiner{
+		min-height: 450px;
+		min-width: 680px;
+	}
+
+		.div-restablecer{
+			min-width: 350px;
+			min-height: 230px;
+		}
+	.seccion2{
+		min-width: 450px;
+			min-height: 250px;
+	}
+}*/
