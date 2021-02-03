@@ -15,6 +15,11 @@ class estudiante{
         return $user[0];
     }
 
+    public function buscarPorDni($dni){
+        $user = Conexion::select("SELECT * FROM `estudiantes` WHERE dni = '$dni'");
+        return $user[0];
+    }
+
     public function agregar($datos){
         $user = Conexion::query("INSERT INTO estudiantes(nombre, apepat, apemat, dni, idcarrera, idturno, estado) 
                                 VALUES ('$datos[0]', '$datos[1]', '$datos[2]', '$datos[3]', '$datos[4]', '$datos[5]', 1)", 1);

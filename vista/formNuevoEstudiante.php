@@ -35,19 +35,20 @@ class formNuevoEstudiante{
                     <div class="row-input">
                          <div class="contenedor_input">
                             <label class="labe" for="">Nombres:</label>                      
-                            <input type="text" placeholder="Ingrese nombres" name="txtNombre" required >
+                            <input type="text" placeholder="Ingrese nombres" name="txtNombre" maxlength="30" required >
                         </div>
                         <div class="contenedor_input">
                             <label class="labe" for="">Apellido paterno:</label>  
-                            <input type="text" placeholder="Ingrese apellido paterno" name="txtApepat" required>
+                            <input type="text" placeholder="Ingrese apellido paterno" name="txtApepat" maxlength="20" required>
                         </div>
                          <div class="contenedor_input">
                             <label class="labe" for="">Apellido Materno:</label>  
-                            <input type="text" placeholder="Ingrese apellido materno" name="txtApemat" required>
+                            <input type="text" placeholder="Ingrese apellido materno" name="txtApemat" maxlength="20" required>
                         </div>
                         <div class="contenedor_input">
                             <label class="labe" for="">DNI:</label>  
-                            <input type="text" placeholder="Ingrese DNI" name="txtDni" required>
+                            <input type="text" placeholder="Ingrese DNI" name="txtDni" minlength="8" maxlength="8"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
                         </div>
                         <div class="contenedor_input">
                             <label class="labe">Carrera</label>

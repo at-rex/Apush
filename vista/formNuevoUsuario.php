@@ -36,23 +36,23 @@ class formNuevoUsuario{
                       <div class="mitad1">
                        <div class="contenedor_input">
                             <label class="labe" for="">Usuario:</label>  
-                            <input type="text" placeholder="Ingrese usuario" name="txtUsuario" required>
+                            <input type="text" placeholder="Ingrese usuario" name="txtUsuario" maxlength="20" required>
                         </div>
                         <div class="contenedor_input">
                             <label class="labe" for="">Contraseña:</label>                      
-                            <input type="password" placeholder="Ingrese contraseña" name="txtPassword" required >
+                            <input type="password" placeholder="Ingrese contraseña" name="txtPassword" minlength="6" maxlength="20" required>
                         </div>
                         <div class="contenedor_input">
                             <label class="labe" for="">Nombres:</label>                      
-                            <input type="text" placeholder="Ingrese nombres" name="txtNombre" required >
+                            <input type="text" placeholder="Ingrese nombres" name="txtNombre" maxlength="30" required >
                         </div>
                          <div class="contenedor_input">
                             <label class="labe" for="">Apellido paterno:</label>  
-                            <input type="text" placeholder="Ingrese apellido paterno" name="txtApepat" required>
+                            <input type="text" placeholder="Ingrese apellido paterno" name="txtApepat" maxlength="20" required>
                         </div>
                          <div class="contenedor_input">
                             <label class="labe" for="">Apellido Materno:</label>  
-                            <input type="text" placeholder="Ingrese apellido materno" name="txtApemat" required>
+                            <input type="text" placeholder="Ingrese apellido materno" name="txtApemat" maxlength="20" required>
                         </div>
                         </div> 
                     <div class="mitad2">

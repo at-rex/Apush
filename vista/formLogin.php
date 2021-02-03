@@ -10,7 +10,7 @@ class formLogin{
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="shorcut icon" type="image/x-icon" href="img/sh.ico">
-            <link rel="StyleSheet" href="css/Estilos_login.css" type="text/css">
+            <link rel="StyleSheet" href="CSS/Estilos_login.css" type="text/css">
 
             <title>Stephen Hawking</title>
 

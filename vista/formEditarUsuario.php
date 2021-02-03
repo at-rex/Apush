@@ -38,27 +38,28 @@ class formEditarUsuario{
                                     <div class="contenedor_input">
 
                                         <label class="labe" for="">Usuario:</label>  
-                                        <input type="text" placeholder="Ingrese su nombre" name="txtUsuario" <?php if($user != null) echo "value='".$user[1]."'"?> required>  
+                                        <input type="text" placeholder="Ingrese su nombre" name="txtUsuario" <?php if($user != null) echo "value='".$user[1]."'"?> maxlength="20" required>  
                                     </div>
 
                                     <div class="contenedor_input">
                                         <label class="labe" for="">Contraseña:</label>                      
-                                        <input type="password" placeholder="Ingrese apellido paterno" name="txtPassword" <?php if($user != null) echo "value='".$user[2]."'"?> required >
+                                        <input type="password" placeholder="Ingrese apellido paterno" name="txtPassword" <?php if($user != null) echo "value='".$user[2]."'"?> 
+                                        minlength="6" maxlength="20" required >
                                     </div>
 
                                     <div class="contenedor_input">
                                         <label class="labe" for="">Nombres:</label>                      
-                                        <input type="text" placeholder="Ingrese apellido materno" name="txtNombre" <?php if($user != null) echo "value='".$user[3]."'"?>required >
+                                        <input type="text" placeholder="Ingrese apellido materno" name="txtNombre" <?php if($user != null) echo "value='".$user[3]."'"?> maxlength="30" required >
                                     </div>
 
                                     <div class="contenedor_input">
                                         <label class="labe" for="">Apellido paterno:</label>  
-                                        <input type="text" placeholder="Ingrese usuario" name="txtApepat" <?php if($user != null) echo "value='".$user[4]."'"?> required>
+                                        <input type="text" placeholder="Ingrese usuario" name="txtApepat" <?php if($user != null) echo "value='".$user[4]."'"?> maxlength="20" required>
                                     </div>
 
                                     <div class="contenedor_input">
                                         <label class="labe" for="">Apellido Materno:</label>  
-                                        <input type="text" placeholder="Ingrese Contraseña" name="txtApemat" <?php if($user != null) echo "value='".$user[5]."'"?> required>  
+                                        <input type="text" placeholder="Ingrese Contraseña" name="txtApemat" <?php if($user != null) echo "value='".$user[5]."'"?> maxlength="20" required>  
                                     </div>
 
                                     <div class="contenedor_input">
